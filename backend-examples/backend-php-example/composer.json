@@ -1,0 +1,8 @@
+{
+    "name": "mcnor/freya_customer_backend_php_demo",
+    "require": {
+        "slim/slim": "4.0",
+        "slim/psr7": "^1.6",
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}
