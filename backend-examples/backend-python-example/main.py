@@ -36,7 +36,7 @@ def sign(message: str, private_key_str: str) -> str:
 async def post_authentication_details(
     company_code: str, user_id: str, signature: str, timestamp: str
 ) -> str:
-    url = "https://stylist-auth-api-b44moh36lq-ey.a.run.app/api/authenticate"
+    url = "https://api.freyafashion.ai/api/v1/authenticate"
     body = {
         "company_code": company_code,
         "user_id": user_id,

@@ -48,7 +48,7 @@ function postAuthenticationDetails($companyCode, $userId, $signature, $timestamp
     $client = new Client([
         'verify' => false
     ]);
-    $url = 'https://stylist-auth-api-b44moh36lq-ey.a.run.app/api/authenticate';
+    $url = 'https://api.freyafashion.ai/api/v1/authenticate';
     $body = [
         'company_code' => $companyCode,
         'user_id' => $userId,

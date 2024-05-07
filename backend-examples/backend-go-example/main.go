@@ -45,7 +45,7 @@ func signMessage(message string, privateKey *rsa.PrivateKey) (string, error) {
 
 func postAuthenticationDetails(companyCode, userId, signature, timestamp string) (string, error) {
 	client := &http.Client{Timeout: 30 * time.Second}
-	url := "https://stylist-auth-api-b44moh36lq-ey.a.run.app/api/authenticate"
+	url := "https://api.freyafashion.ai/api/v1/authenticate"
 	body, _ := json.Marshal(map[string]string{
 		"company_code": companyCode,
 		"user_id":      userId,
